@@ -1,11 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+	<title>Projeto MOMBABY</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Nome do Site/Empresa/Quem fez o site">
+	<meta name="description" content="Descrição do site aqui...">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+	<meta name="keywords" content="palavras-chaves">
+	<!--colocar aqui as meta-tags de SEO-->
+	<link rel="stylesheet" type="text/css" href="../css/home.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section id="FAQ"></section>
+
+
+
+	<header class="logo-figura">
+		<div class="logo"><a href="home.html"><img src="../imagens/imagem_do_header.png"></a></div>
+	</header>
+
+
+	<header>
+		<div class="container">
+			<nav class="menu-desktop">
+				<div class="logo2"></div>
+				<ul>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="#PersonalBabyS">Personal Baby Shopper</a></li>
+					<li><a href="">Serviços</a></li>
+					<li><a href="">Perguntas Frequentes</a></li>
+					<li><a href="#contato">Contato</a></li>
+				</ul>
+			</nav>
+
+			<nav class="menu-mobile">
+				<ul>
+					<li><a href="">Sobre</a></li>
+					<li><a href="">Personal Baby Shopper</a></li>
+					<li><a href="">Serviços</a></li>
+					<li><a href="">Perguntas Frequentes</a></li>
+					<li><a href="">Contato</a></li>
+				</ul>
+			</nav>
+		<div class="clear"></div>
+		</div>
+	</header>
+		
+
+
+
+	<section class="main-bg">
+		<div class="overlay"></div>
+		<div class="container">
+			<h2 class="headH2">Enxoval de seu bebê de forma personalizada</h2>
+		</div>
+		<div class="clear"></div>
+	</section>
+
+
+
+	
+
+
+	<section class="imagem__texto" id="sobre" style="transition: all .25s linear;">
+		<div class="container">
+			<img src="../imagens/bbpe.jpg"> 
+			<h2>A MOMBABY Consultoria</h2>
+
+			<p>
+			Trabalhamos para te auxiliar na escolha do enxoval do seu bebê de forma personalizada, econômica e objetiva. Isso significa que nos dedicamos para que ele seja perfeito dentro do seu estilo de vida, da sua realidade financeira e necessidades do dia a dia.
+			<br>
+			<br>
+			Você será acompanhada (no serviço presencial) ou assessorada (no serviço online) por nossa equipe que ficará à disposição para explicar as funcionalidades de cada produto  e diferenças entre os concorrentes, assim, você poderá tirar todas as dúvidas e fazer a melhor opção para o seu enxoval.
+			<br>
+			<br>
+			E o melhor… nossas clientes têm acesso a descontos exclusivos nas melhores lojas de enxovais do Brasil! Isso significa que na grande parte das consultorias, esses descontos ultrapassam o valor da nossa assessoria, ou ficam muito próximos. Deixando claro que a nossa empresa  não recebe nenhuma comissão das lojas indicadas, repassando todas as vantagens e descontos para a cliente.
+			</p>
+
+		</div>
+		<div class="clear"></div>
+	</section>
+
+
+
+
+
+
+	<section class="img-da-pessoa_texto__" id="PersonalBabyS">
+		<div class="container">
+			<img class="barbaraft" style="max-width:100%; width: 350px;" src="../imagens/barbara.jpg">
+			
+			<h2>Bárbara Mauri</h2>
+			
+
+			<p>
+			Sou Personal Baby Shopper, formada pela Talu Concept University. Sou casada,  médica veterinária e mãe de um bebê lindo.
+			</p>
+
+			<p>
+			Minha principal experiência com a maternidade e com o mundo dos bebês começou quando fiz o enxoval do meu filho nos EUA. Percebi o quanto ficamos em dúvida com a grande variedade de produtos que existem no mercado, e por isso, resolvi criar a MOMBABY CONSULTORIA. Através dela, posso auxiliar mamães e gestantes nessa nova fase cheia de novidades.
+			</p>
+
+		</div>
+		<div class="clear"></div>
+	</section>
+
+
+
+
+
+	<section class="contato" id="contato">
+		<div class="container">
+			<div class="formulario">
+				<h2>Contato</h2>
+				<form method="post">
+
+					<div class="w50">
+						<input placeholder="Nome" type="text" required>
+					</div>
+
+					<div class="w50">
+						<input placeholder="WhatsApp" type="text" required>
+					</div>
+
+					<div class="w100">
+						<input placeholder="E-mail" type="email" required>
+					</div>
+
+					<div class="w100">
+						<textarea placeholder="Sua mensagem"></textarea>
+					</div>
+				</form>
+			</div>
+
+
+			<div class="botao">
+				<input type="submit" name="acao" value="Enviar Mensagem">
+			</div>
+
+			<div class="clear"></div>
+		</div>
+	</section>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+
+<script>
+var $doc = $('html, body');
+$('a').click(function() {
+    $doc.animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    return false;
+});
+</script>
+
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 
 
+
 .card-title {
     font-size: 40px;
     font-weight: 700;
@@ -67,4 +68,283 @@
     justify-content: flex-start;
     align-items: center;
     margin: 5.5%;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* Classes Auxiliares */
+
+.container{
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+.w50{
+	width: 50%;
+	float: left;
+}
+
+.center{
+	text-align: center;
+}
+
+.clear{
+	clear: both;
+}
+
+
+/* Classes do Próprio Site */
+
+header.logo-figura{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+nav.menu-desktop{
+	display: block;
+	text-align:center;
+}
+
+nav.menu-desktop a{
+	color: rgb(117,86,163);
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 0 10px;
+}	
+nav.menu-desktop a:hover{text-decoration: underline;}
+
+nav.menu-desktop li{
+	display: inline-block;
+	text-align: center;
+}
+
+nav.menu-mobile{
+	display: none;
+}
+
+
+
+/* Començando a primeira SECTION ---------------------------------------------------- */
+
+
+section.main-bg{
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	height: 500px;
+	background: url('../imagens/babygroot.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	margin-top: 25px;
+}
+
+section.main-bg > .container{
+	position: relative;
+	z-index: 2;
+}
+
+.overlay{
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+	left: 0;
+	top: 0; 
+}
+
+section.main-bg h2{
+	color: rgb(255,255,255);
+	padding: 100px 0;
+	font-size: 100px;
+}
+
+/* Outra SECTION --------------------------------------------------------- */
+
+section.mombaby{
+	background: url('imagens/babygroot.jpg');
+	position: relative;
+	z-index: 2;
+	width: 50%;
+	height: 500px;
+}
+
+.line-text{
+	position: relative;
+	display: inline-block;
+	color: rgb(117,86,163);
+}
+
+
+section.imagem__texto img{
+	border-radius: 20px 20px; 
+	max-width: 100%;
+	float: right;
+	width: 50%;
+	width: 400px;
+	height: auto;
+	margin: 100px 25px;
+	border-radius: 25px;
+}
+
+section.imagem__texto h2{
+	color: rgb(117,86,163);
+	font-weight: bold;
+	font-size: 50px; 
+	padding-top: 40px;
+}
+
+section.imagem__texto p{
+	color: #808184;
+	text-align: left;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	line-height: 35px;
+	padding: 0 10px;
+	margin-right: 15px;
+}
+
+p{
+   display: block;
+   margin-block-start: 1em;
+   margin-block-end: 1em;
+   margin-inline-start: 0px;
+   margin-inline-end: 0px;
+}
+span.traco{text-decoration: underline;}
+
+section.imagem__texto{
+	/*padding: 0 50px;*/
+}
+
+/* Aqui é outra SECTION ---------------------------------------------------------------- */
+
+
+section.img-da-pessoa_texto__{
+	display: block;
+	padding-top: 50px;
+	background-color: rgba(255,255,255,0.1);
+}
+
+div.container p{
+	display: flex;
+	justify-content: flex-start;
+}
+
+ img.barbaraft{
+	border-radius: 20px 20px;
+	float: left;
+	width: 50%;
+	margin-top: 50px;
+}
+
+section.img-da-pessoa_texto__ h2{
+	color: rgb(117,86,163);
+	font-weight: bold;
+	font-size: 50px; 
+	padding-top: 40px;
+	text-align: center;
+}
+
+section.img-da-pessoa_texto__ p{
+	color: #808184;
+	text-align: left;
+	font-size: 18px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	line-height: 30px;
+	padding-left: 30px;
+}
+
+
+
+/* Section do CONTATO ----------------------------------------------------------------------- */
+
+
+section.contato{
+	min-height: 600px;
+	padding: 300px 0;
+}
+
+section.contato .w50,
+section.contato .w100{
+	padding: 0 10px;
+}
+
+.formulario form{
+	margin-top:40px;
+}
+
+.formulario h2{
+	color: rgb(117,86,163);
+	font-weight: bold;
+	font-size: 50px; 
+	padding-top: 40px;
+	text-align: center;
+	border-bottom: 3px solid rgb(117,86,1630);
+}
+
+.formulario input[type=text],
+.formulario input[type=email]{ 
+	width: 100%;
+	height: 40px;
+	border: 1px solid #949494;
+	border-radius: 10px 10px 10px 10px;
+	margin-bottom: 15px;
+	padding-left: 8px; 
+}
+
+.formulario textarea{
+	width: 100%;
+	height: 120px;
+	border: 1px solid #949494;
+	border-radius: 10px 10px 10px 10px;
+	margin-bottom: 15px;
+	padding: 10px;
+	resize: vertical;
+}
+
+.tags-form{
+	padding-left: 50px;
+}
+.tags-form h2{
+	font-weight: normal;
+}
+.tags-form p{
+	font-weight: lighter;
+}
+
+
+.container [type=submit]{
+	width: 250px;
+	height: 50px;
+	background-color: rgb(117,86,163);
+	color: white;
+	display: block;
+	font-size: 18px; 
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+	font-style: italic;
+	border-radius: 40px 40px 40px 40px;
+	cursor: pointer;
+	margin: 0 auto;
+}
+
+
+@media screen and (max-width: 500px){
+		nav.menu-desktop li{
+		display: block;
+		text-align:c
 }

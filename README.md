@@ -1,1 +1,1 @@
-<h1>I'm jsut creating a README test</h1>
+<h1>I'm just creating a README test</h1>
